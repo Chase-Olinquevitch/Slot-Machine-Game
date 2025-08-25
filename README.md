@@ -2,6 +2,8 @@
 
 A small python script to simulate slots in your terminal.
 
+
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required libraries.
@@ -9,6 +11,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the req
 ```bash
 pip install requirements.txt
 ```
+
+
 
 ## Usage
 
@@ -18,9 +22,12 @@ Start the script by running the file with python.
 python slot_machine.py
 ```
 
+
 > ❗️ Error
 >
 > If the command prompt isn't properly showing the emojis for the slot machine, type ```chcp 65001 ``` into the terminal to change it to UTF-8
+
+
 
 ## Changing probabilities
 
@@ -49,6 +56,7 @@ To change these probabilities, change the numbers within the ```random.choice(ra
 >   return "7"
 > ```
 
+
 Furthermore, there is a section dedicated to making winning more likely, to make the game a bit more fun at the expense of realism.
 
 ```python
@@ -58,17 +66,23 @@ if random.choice(range(1, 5)) == 1:
         result[2] = result[0]
 ```
 
+
 All this does is give a 1 in 5 chance to make the second slot the same value as the first. 
 And if it hits, there is another 1 in 3 chance to make the last one the same as the first one as well, guaranteeing a win if it isn't blank.
 
 If you want to get rid of this functionality or simply change the probabilities, you can do so in the same way the ```get_result()``` function is changed.
+
+
 
 ## Contributing
 
 Obviously this isn't an extraordinary project or anything, but I am still willing to learn! If someone would like to review this code and give me a few pointers, feel free to make a pull request.
 Please make sure to open an issue first to discuss any suggested changes.
 
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
